@@ -11,7 +11,8 @@ RUN apt-get update && \
     libjpeg62-turbo-dev \
     libpng-dev \
     libgmp-dev \
-    libldap2-dev
+    libldap2-dev \
+    git
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 
