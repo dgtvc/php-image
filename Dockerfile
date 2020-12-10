@@ -12,7 +12,8 @@ RUN apt-get update && \
     libpng-dev \
     libgmp-dev \
     libldap2-dev \
-    git
+    git \
+    unzip
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 
