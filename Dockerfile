@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.0-fpm-buster
 
 RUN docker-php-ext-install mysqli pdo_mysql
 RUN docker-php-ext-configure opcache --enable-opcache \
