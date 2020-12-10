@@ -22,3 +22,5 @@ RUN pecl install -o -f redis \
 RUN docker-php-ext-configure pcntl --enable-pcntl \
     && docker-php-ext-install pcntl
 
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+
